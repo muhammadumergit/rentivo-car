@@ -10,10 +10,9 @@ import bookingRouter from "./routes/bookingRoutes.js";
 const app = express()
 
 // Connect Database
-await connectDB()
 
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: true,
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
 }));
